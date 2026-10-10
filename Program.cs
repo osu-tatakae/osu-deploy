@@ -201,9 +201,9 @@ namespace osu.Desktop.Deploy
                 if (File.Exists(Path.Combine(path, $"{SolutionName}.sln")))
                     break;
 
-                if (Directory.Exists(Path.Combine(path, "osu")) && File.Exists(Path.Combine(path, "osu", $"{SolutionName}.sln")))
+                if (Directory.Exists(Path.Combine(path, "tatakae")) && File.Exists(Path.Combine(path, "tatakae", $"{SolutionName}.sln")))
                 {
-                    path = Path.Combine(path, "osu");
+                    path = Path.Combine(path, "tatakae");
                     break;
                 }
 
